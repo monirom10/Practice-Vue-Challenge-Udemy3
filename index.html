@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Reactivity in Action</h1>
+    </header>
+    <section id="assignment">
+      <button v-on:click="addFive()">Add 5</button>
+      <button v-on:click="addOne()">Add 1</button>
+      <!-- 1. Connect the buttons and calculate a value (a number ) -->
+      <!-- Show "Not there yet" until you reach a result of exactly 37 -->
+      <!-- Show "Too much!" if the result is greater than 37 -->
+      <p>Sum Number: {{ sum }}</p>
+      <!-- <button id="last-button" v-on:click="reset()">Reset</button> -->
+      <p>Result: {{ resultMessage}} </p>
+      <!-- 2. Watch for changes in "result" and reset the value to 0 after 5 seconds -->
+    </section>
+  </body>
+  <script src="app.js"></script>
+</html>
